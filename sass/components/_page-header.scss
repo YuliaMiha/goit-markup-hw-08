@@ -1,36 +1,125 @@
 .page-header {
-  padding: 32px, 0;
-  border-bottom: 1px solid $header-border-color;
+  color: $primary-white-color;
+  letter-spacing: 0.02em;
+  border-bottom: 1px solid #ececec;
+  position: relative;
+}
+.header-menu__container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $primary-white-color;
+  padding: 20px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+
+  color: $title-text-color;
 }
 
 .header-block {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 96px;
+  }
+}
+.header-site {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
-.header-logo {
-  display: flex;
+.logo {
+  color: $accent-color;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.1667;
+  text-align: center;
 
-  &__logo {
-    margin-right: 92px;
-  }
-
-  &__logo {
-    color: $black-color;
-    font-family: $font-raleway;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    text-decoration: none;
-    margin: auto;
-  }
-
-  &__colorlogo {
-    color: $accent-color;
-  }
   @media screen and(min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
     text-align: start;
+  }
+}
+.header__logo {
+  margin-right: 93px;
+}
+.header__logo--black {
+  color: $black-color;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.site-nav__list {
+  display: flex;
+}
+
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav__link {
+  position: relative;
+  color: #212121;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  padding: 32px 0;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: $accent-color;
+  }
+
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.site-nav__link--current {
+  &:visited {
+    color: $accent-color;
+  }
+
+  &::after {
+    content: " ";
+    background-color: $accent-color;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
   }
 }
