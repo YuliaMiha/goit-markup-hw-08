@@ -1,0 +1,132 @@
+.page-footer {
+  background-color: $footer-color;
+  padding: 70px 0;
+
+  & .line {
+    border-bottom: 1px solid $footer-color;
+  }
+  & .footer-lifo__link,
+  & .footer-lifo__tel,
+  & .footer-lifo__adress {
+    color: $footer-link-color;
+    font-size: 14px;
+    line-height: 1.7;
+    font-style: normal;
+    text-decoration: none;
+    transition: color 250ms $timing-function;
+  }
+
+  & .footer-lifo__link:hover,
+  & .footer-lifo__link:focus {
+    color: $accent-color;
+  }
+
+  & .footer-lifo__tel:hover,
+  & .footer-lifo__tel:focus {
+    color: $accent-color;
+  }
+}
+
+.footer-block {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
+
+.footer-logo__logo {
+  color: $black-color;
+  font-family: $font-raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+  margin: auto;
+}
+
+.footer-logo__colorblack {
+  color: $primary-white-color;
+}
+
+.footer-logo__colorlogo {
+  color: $accent-color;
+}
+
+.footer-lifo .footer-lifo__adress {
+  color: $primary-white-color;
+  font-style: normal;
+  text-decoration: none;
+  transition: color 250ms $timing-function;
+}
+
+.footer-lifo .footer-lifo__adress:hover,
+.footer-lifo .footer-lifo__adress:focus {
+  color: $accent-color;
+}
+
+.footer-block .footer-logo__logo {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer-lifo__contact {
+  margin-bottom: 9px;
+
+  & .footer-lifo__tel {
+    margin-bottom: 0px;
+  }
+}
+
+.footer-second__title {
+  font-family: $font-roboto;
+  font-weight: 700;
+  line-height: 1.1428;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  margin-bottom: 20px;
+}
+
+.footer-icon {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+}
+.footer-icon__link .footer-icon__iter {
+  fill: $primary-white-color;
+}
+
+.footer-link {
+  display: flex;
+  background-color: $footer-icon-baground-color;
+  transition: background-color 250ms $timing-function;
+}
+
+.footer-icon__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: $primary-white-color;
+  fill: var(--icon-color);
+  transition: fill 250ms $timing-function;
+  transition: background-color 250ms $timing-function;
+
+  & {
+    display: flex;
+    background-color: $footer-icon-baground-color;
+    transition: background-color 250ms $timing-function;
+  }
+  &:hover,
+  &:focus {
+    fill: $primary-white-color;
+    background-color: $accent-color;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}

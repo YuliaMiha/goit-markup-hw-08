@@ -1,0 +1,82 @@
+.components {
+    padding: 94px 0;
+
+}
+.components p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.components__title--centered,
+.feature__title--centered,
+.comands__title--centered {
+    text-align: center;
+}
+
+.components__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: none;
+}
+
+.sectit-succes {
+    display: flex;
+    margin: 0 auto;
+    padding: 0 15px;
+
+
+         &__title {
+    color: $title-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+           &__tito {
+    margin-right: 30px;
+}
+
+          &__tito:last-child {
+    margin-right: 0;
+}
+
+
+         &__description {
+    width: 270px;
+}
+
+
+       &__tito::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $secondary-background-color;
+    color: $accent-color;
+    margin-bottom: 30px;
+
+}
+
+          &__tito:nth-child(1)::before {
+    background-image: url("../images/iconimag/icon-uvagadodetel.svg");
+}
+
+        &__tito:nth-child(2)::before {
+    background-image: url("../images/iconimag/icon-punktyaln.svg");
+}
+
+         &__tito:nth-child(3)::before {
+    background-image: url("../images/iconimag/icon-planyvan.svg");
+}
+
+        &__tito:nth-child(4)::before {
+    background-image: url("../images/iconimag/icon-sychasni.svg");
+}
+}

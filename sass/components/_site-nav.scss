@@ -1,0 +1,144 @@
+.section {
+  padding: 94px 0;
+}
+
+.section__title {
+  color: $title-text-color;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+
+  &__list {
+    display: flex;
+    margin-left: 70px;
+  }
+}
+.site-nav__link {
+  color: $title-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: inline-block;
+  padding: 32px 0;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  .site-nav__iter &--current {
+    color: $accent-color;
+  }
+}
+
+.site-nav__iter {
+  display: block;
+
+  & + .site-nav__iter {
+    margin-left: 50px;
+  }
+
+  & .site-nav__link {
+    display: block;
+    text-decoration: none;
+    color: $title-text-color;
+    position: relative;
+    transition: color 250ms $timing-function;
+  }
+
+  & .site-nav__link::after,
+  & .site-nav__link--current::after {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: -1px;
+
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-color;
+    transition: width 250ms $timing-function;
+    width: 0;
+  }
+
+  & .site-nav__link::after {
+    width: 0;
+  }
+
+  & .site-nav__link:hover::after,
+  & .site-nav__link:focus::after,
+  & .site-nav__link--current::after {
+    width: 100%;
+  }
+}
+
+.auth-nav__iter {
+  display: block;
+}
+.auth-nav__tel {
+  color: $primary-text-color;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth-nav__mail {
+  color: $primary-text-color;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  font-size: 14px;
+  line-height: 1.14;
+  text-decoration: none;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth-nav__list {
+  display: flex;
+  margin-left: auto;
+}
+
+.auth-nav__iter + .auth-nav__iter {
+  margin-left: 50px;
+}
+
+.auth-nav__mail,
+.auth-nav__tel {
+  color: $primary-text-color;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.auth-nav__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.auth-nav__phone {
+  margin-right: 10px;
+  fill: currentColor;
+}

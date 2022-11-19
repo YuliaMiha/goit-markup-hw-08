@@ -1,0 +1,31 @@
+.page-header {
+  padding: 32px, 0;
+  border-bottom: 1px solid $header-border-color;
+}
+
+.header-block {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+
+  &__logo {
+    margin-right: 92px;
+  }
+
+  &__logo {
+    color: $black-color;
+    font-family: $font-raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    text-decoration: none;
+    margin: auto;
+  }
+
+  &__colorlogo {
+    color: $accent-color;
+  }
+}
