@@ -1,5 +1,11 @@
+.feature__title--centered {
+  text-align: center;
+}
+
 .feature {
-  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 
   & .feature__title--centered {
     color: $title-text-color;

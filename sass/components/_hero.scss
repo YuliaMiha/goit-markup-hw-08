@@ -1,31 +1,59 @@
 .hero {
   background-color: $footer-color;
   background: linear-gradient($color-gradient, $color-gradient),
-    url(../images/iconimag/backgroundhero.jpg);
+    url(../images/bcg-img-mobile.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
-
-  &__block {
+  @media (min-device-pixel-ratio: 2) and (max-width: 768px),
+    (min-resolution: 192dpi) and (max-width: 768px),
+    (min-resolution: 2dppx) and (max-width: 768px) {
+    background-image: url(../images/bcg-img-mobile@2x.jpg);
+  }
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/bcg-img-tablet.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi) and (min-width: 768px),
+    (min-resolution: 2dppx) and (min-width: 768px) {
+    background-image: url(../images/bcg-img-tablet@2x.jpg);
+  }
+  @media screen and (min-width: 1024px) {
+    background-image: url(../images/bcg-main.jpg);
+  }
+  @media (min-device-pixel-ratio: 2) and (min-width: 1024px),
+    (min-resolution: 192dpi) and (min-width: 1024px),
+    (min-resolution: 2dppx) and (min-width: 1024px) {
+    background-image: url(../images/bcg-main@2x.jpg);
+  }
+}
+.hero__block {
+  padding: 200px;
+  @media screen and (min-width: 1200px) {
     padding: 200px;
   }
+}
 
-  &__title {
-    color: $primary-white-color;
-    font-weight: 900;
+.hero__title {
+  color: $primary-white-color;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
   }
+}
 
-  &__wrapper {
-    display: flex;
-    justify-content: center;
-  }
+.hero__wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .hero__button {
@@ -42,8 +70,11 @@
   padding: 10px 32px;
   margin-top: 30px;
 
-&:hover,
-&:focus {
-  background-color: #188ce8;
-}
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 }

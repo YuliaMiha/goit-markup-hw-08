@@ -53,35 +53,53 @@
 
     <!--Сладові-->
 
-        <section class="components">
-            <div class="container">
-            <h2 class="components__title components__title--centered">Складники для успішної роботи з бізнесом</h2>
-            <ul class="sectit-succes">
-                <li class="sectit-succes__tito">
-                    <h3 class="sectit-succes__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p class="sectit-succes__description">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li>
-                <li class="sectit-succes__tito">
-                    <h3 class="sectit-succes__title">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p class="sectit-succes__description"> Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li class="sectit-succes__tito">
-                    <h3 class="sectit-succes__title">ПЛАНУВАННЯ</h3>
-                    <p class="sectit-succes__description">Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li class="sectit-succes__tito">
-                    <h3 class="sectit-succes__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p class="sectit-succes__description">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
-            </ul>
-            </div>
-        </section>
+            <section class="section advantages">
+                <div class="container">
+                    <h2 hidden class="title">Переваги</h2>
+                    <ul class="advantages__list">
+                        <li class="advantages__item">
+                            <div class="adv-icon">
+                                <svg class="icon icon-antenna-1" width="70" height="70">
+                                    <use xlink:href="./images/iconimag/sprite.svg#icon-antenna-1"></use>
+                                </svg>
+                            </div>
+                            <h3 class="item">УВАГА ДО ДЕТАЛЕЙ</h3>
+                            <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
+                            </p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="adv-icon"><svg class="icon icon-clock-1" width="70" height="70">
+                                    <use xlink:href="./images/iconimag/sprite.svg#icon-clock-1"></use>
+                                </svg>
+                            </div>
+                            <h3 class="item">ПУНКТУАЛЬНІСТЬ</h3>
+                            <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="adv-icon"><svg class="icon icon-diagram-1" width="70" height="70">
+                                    <use xlink:href="./images/iconimag/sprite.svg#icon-diagram-1"></use>
+                                </svg>
+                            </div>
+                            <h3 class="item">ПЛАНУВАННЯ</h3>
+                            <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+                        </li>
+                        <li class="advantages__item">
+                            <div class="adv-icon"><svg class="icon icon-astronaut-1" width="70" height="70">
+                                    <use xlink:href="./images/iconimag/sprite.svg#icon-astronaut-1"></use>
+                                </svg>
+                            </div>
+                            <h3 class="item">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                            <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
 
     <!-- Чим ми займаємось -->
 
 
-        <section class="feature">
+        <section class="section feature">
             <div class="container fea">
             <h2 class="feature__title feature__title--centered">Чим ми займаємося</h2>
             <ul class="work-list">
@@ -383,6 +401,48 @@
                     </form>
                 </div>
             </div>
+
+            <!-- Меню вікно для мобільної версії -->
+            <div class="menu-container js-menu-container" id="mobile-menu">
+                <button type="button" class="menu-toggle js-close-menu">
+                    <svg class="icon" width="40" height="40">
+                        <use class="icon-cross" xlink:href="./images/iconimag/sprite.svg#icon-icon-cross"></use>
+                    </svg>
+                </button>
+                <nav class="menu__mobile">
+                    <ul class="menu__mobile-list">
+                        <li class="menu__mobile-item current">
+                            <a href="./index.html" class="menu__mobile-item--current">Студія</a>
+                        </li>
+                        <li class="menu__mobile-item">
+                            <a href="./portfolio.html">Портфоліо</a>
+                        </li>
+                        <li class="menu__mobile-item">
+                            <a href="#">Контакти</a>
+                        </li>
+                    </ul>
+                </nav>
+                <ul class="menu__info">
+                    <li class="menu__info--tel"><a href="tel:+380961111111">
+                            +38 096 111 11 11</a></li>
+                    <li class="menu__info--mail"> <a href="mailto:info@devstudio.com">
+                            info@devstudio.com</a></li>
+                </ul>
+                <ul class="menu__socials">
+                    <li class="menu__socials--item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="menu__socials--item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Twitter</a>
+                    </li>
+                    <li class="menu__socials--item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li class="menu__socials--item">
+                        <a href="http://" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
     </main>
 
 
@@ -458,6 +518,7 @@
     </footer>
    
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

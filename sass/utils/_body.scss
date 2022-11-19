@@ -1,9 +1,11 @@
 body {
-    background-color: $primary-white-color;
-    color: $primary-text-color;
-    font-family: $font-roboto;
-    letter-spacing: .03em;
-    font-size: 14px;
-    line-height: 1.7;
-
+  background-color: $primary-white-color;
+  color: $primary-text-color;
+  font-family: $font-roboto;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.7;
+}
+body.modal-open {
+  overflow: hidden;
 }
