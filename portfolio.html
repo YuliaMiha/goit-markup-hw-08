@@ -50,7 +50,7 @@
 
     <main class="main">
         <section class="portfolio">
-            <div class="container">
+            <div class="container filter-block">
         <h1 class="portfolio__hidden">Фільтр робіт</h1>
         <ul class="filter-list">
         <li class="filter-list__item"><button type="button" class="filter-list__button">Усі</button></li>
@@ -210,6 +210,47 @@
         </ul>
         </div>
         </section>
+        <!-- Меню вікно для мобільної версії -->
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button type="button" class="menu-toggle js-close-menu">
+                <svg class="icon" width="40" height="40">
+                    <use class="icon-cross" xlink:href="./images/iconimag/sprite.svg#icon-icon-cross"></use>
+                </svg>
+            </button>
+            <nav class="menu__phone">
+                <ul class="menu__phone-list">
+                    <li class="menu__phone-item current">
+                        <a href="./index.html" class="menu__phone-item--current">Студія</a>
+                    </li>
+                    <li class="menu__phone-item">
+                        <a href="./portfolio.html">Портфоліо</a>
+                    </li>
+                    <li class="menu__phone-item">
+                        <a href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="menu__info">
+                <li class="menu__info--tel"><a href="tel:+380961111111">
+                        +38 096 111 11 11</a></li>
+                <li class="menu__info--mail"> <a href="mailto:info@devstudio.com">
+                        info@devstudio.com</a></li>
+            </ul>
+            <ul class="menu__socials">
+                <li class="menu__socials--item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Instagram</a>
+                </li>
+                <li class="menu__socials--item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Twitter</a>
+                </li>
+                <li class="menu__socials--item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">Facebook</a>
+                </li>
+                <li class="menu__socials--item">
+                    <a href="http://" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
     </main>
 
 
@@ -217,7 +258,7 @@
     
     <footer class="page-footer line">
         <div class="container footer-block">
-            <div>
+            <div class="footer__first">
                 <ul class="footer-logo">
                     <li class="footer-logo__link">
     
@@ -240,7 +281,7 @@
                 </address>
             </div>
             <div class="footer-second">
-                <p class="footer-second__title">ПРИЄДНУЙТЕСЬ</p>
+                <h2 class="footer-title">приєднуйтесь</h2>
                 <ul class="footer-icon">
                     <li class="footer-icon__item">
                         <a class=" footer-icon__link" href="#" target="_blank" aria-label="instagram"
@@ -276,23 +317,22 @@
                     </li>
                 </ul>
             </div>
-            <div class="box__sending">
-                <p class="box__sending__title">Підпишіться на розсилку</p>
-                <form class="footer-form">
-                    <label class="footer-form__email">
-                        <input type="email" name="email" placeholder="E-mail" />
-                    </label>
-    
-                    <button class="footer-button" type="submit">
-                        Підписатися
-                        <svg class="footer-button__send" width="24px" height="24px">
+            <div class="footer__third">
+                <h2 class="footer-title">Підпишіться на розсилку</h2>
+                <form action="#" name="form-butform" class="footer-form__butform">
+                    <input type="email" name="email-butform" id="email-butform" placeholder="E-mail"
+                        class="footer-form__email">
+                    <button type="submit" class="button footer-form__button"> Підписатися
+                        <svg class="icon icon-icon-send" width="24" height="24">
                             <use xlink:href="./images/iconimag/sprite.svg#icon-iconplane"></use>
                         </svg>
                     </button>
                 </form>
+    
             </div>
         </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
     </body>
     
     </html>

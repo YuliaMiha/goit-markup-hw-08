@@ -9,12 +9,11 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: $backdrop-color;
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-  transition-property: opacity;
+  transition-property: opacity, scale(1);
   transition-duration: 250ms;
-  transition-timing-function: $timing-function;
-  overflow-y: scroll;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -23,6 +22,7 @@
   pointer-events: none;
   /* transform: scale(0.8); */
   transition: 250ms;
+  scale: 2.5;
 }
 
 .backdrop__modal {
@@ -38,6 +38,9 @@
   overflow: visible;
   position: relative;
   transition-timing-function: 250ms $timing-function;
+  @media screen and(min-width: 1200px) {
+    max-width: 528px;
+  }
 }
 
 .close-modal {
@@ -271,28 +274,23 @@
 }
 
 /*button*/
-.group-button {
+.modal-wrap__button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.group-button__submit {
-  font-family: $font-roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: $primary-white-color;
+.modal-window__button {
   padding: 10px 52px;
-  background-color: $accent-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
   margin-top: 30px;
-  border: none;
-  cursor: pointer;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: #188ce8;
+  }
+  &:focus {
+    background-color: #188ce8;
+  }
 }

@@ -137,7 +137,15 @@
             <h2 class="comands__title comands__title--centered">Наша команда</h2>
             <ul class="team-list">
                 <li class="team-card">
-                    <img src="./images/img4.jpg" alt="Ігор Дем'яненко" width="270">
+                    <picture>
+                    <source srcset="./images/img4.jpg 3x, ./images/ihor_designer-dt@2x.jpg 2x" media="(min-width: 1200px)"
+                        type="image/jpg" />
+                    <source srcset="./images/ihor_designer-tablet.jpg 1x, ./images/ihor_designer-tablet@2x.jpg 2x"
+                        media="(max-width: 1199px)" type="image/jpg" />
+                    <source srcset="./images/ihor_designer-mobile.jpg 1x, ./images/ihor_designer-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpg" />
+                    <img src="./images/img4.jpg" alt="фото дизайнера">
+                    </picture>
                     <div class="team-card__content">
                     <h3 class="team-card__title">Ігор Дем'яненко</h3>
                     <p class="team-card__text">Product Designer</p>
@@ -174,8 +182,16 @@
                     </div>
                 </li>
                 <li class="team-card">
-                   
-                     <img src="./images/img5.jpg" alt="Ольга Рєпіна" width="270">
+                    <picture>
+                    <source srcset="./images/img5.jpg 3x, ./images/olga_developer-dt@2x.jpg 2x" media="(min-width: 1200px)"
+                        type="image/jpg" />
+                    <source srcset="./images/olga_developer-tablet.jpg 1x, ./images/olga_developer-tablet@2x.jpg 2x"
+                        media="(max-width: 1199px)" type="image/jpg" />
+                    <source srcset="./images/olga_developer-mobile.jpg 1x, ./images/olga_developer-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpg" />
+
+                    <img src="./images/img5.jpg" alt="фото розробниці">
+                    </picture>
                     <div class="team-card__content">
                      <h3 class="team-card__title">Ольга Рєпіна</h3>
                     <p class="team-card__text">Frontend Developer</p>
@@ -213,7 +229,15 @@
                 </li>
 
                 <li class="team-card">
-                    <img src="./images/img6.jpg" alt="Микола Тарасов" width="270">
+                    <picture>
+                    <source srcset="./images/img6.jpg 3x, ./images/mykola_marketing-dt@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpg" />
+                    <source srcset="./images/mykola_marketing-tablet.jpg 1x, ./images/mykola_marketing-tablet@2x.jpg 2x"
+                        media="(max-width: 1199px)" type="image/jpg" />
+                    <source srcset="./images/mykola_marketing-mobile.jpg 1x, ./images/mykola_marketing-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpg" />
+                      <img src="./images/img6.jpg" alt="фото маркетолога">
+                   </picture>
                     <div class="team-card__content">
                     <h3 class="team-card__title">Микола Тарасов</h3>
                     <p class="team-card__text">Marketing</p>
@@ -251,8 +275,15 @@
                 </li>
 
                 <li class="team-card">
-                    
-                <img src="./images/img7.jpg" alt="Ігор Дем'яненко" width="270">
+            <picture>
+                    <source srcset="./images/img7.jpg 3x, ./images/mikhailo_designer-dt@2x.jpg 2x"
+                        media="(min-width: 1200px)" type="image/jpg">
+                    <source srcset="./images/mikhailo_designer-tablet.jpg 1x, ./images/mikhailo_designer-tablet@2x.jpg 2x"
+                        media="(max-width: 1199px)" type="image/jpg">
+                    <source srcset="./images/mikhailo_designer-mobile.jpg 1x, ./images/mikhailo_designer-mobile@2x.jpg 2x"
+                        media="(max-width: 767px)" type="image/jpg">
+                           <img src="./images/img7.jpg" alt="фото дизайнера">
+</picture>
                 <div class="team-card__content">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                     <p class="team-card__text">UI Designer</p>
@@ -403,8 +434,8 @@
                                 <a class="modal-checkbox__link">Умови договору</a>
                             </label>
                         </div>
-                        <div class="group-button">
-                            <button class="group-button__submit" type="submit">Відправити</button>
+                        <div class="modal-wrap__button">
+                            <button type="submit" class="button modal-window__button">Відправити</button>
                         </div>
                     </form>
                 </div>
@@ -417,15 +448,15 @@
                         <use class="icon-cross" xlink:href="./images/iconimag/sprite.svg#icon-icon-cross"></use>
                     </svg>
                 </button>
-                <nav class="menu__mobile">
-                    <ul class="menu__mobile-list">
-                        <li class="menu__mobile-item current">
-                            <a href="./index.html" class="menu__mobile-item--current">Студія</a>
+                <nav class="menu__phone">
+                    <ul class="menu__phone-list">
+                        <li class="menu__phone-item current">
+                            <a href="./index.html" class="menu__phone-item--current">Студія</a>
                         </li>
-                        <li class="menu__mobile-item">
+                        <li class="menu__phone-item">
                             <a href="./portfolio.html">Портфоліо</a>
                         </li>
-                        <li class="menu__mobile-item">
+                        <li class="menu__phone-item">
                             <a href="#">Контакти</a>
                         </li>
                     </ul>
@@ -458,7 +489,7 @@
     
     <footer class="page-footer line">
              <div class="container footer-block">
-                <div>
+                <div class="footer__first">
                 <ul class="footer-logo">
                 <li class="footer-logo__link">
 
@@ -475,7 +506,7 @@
             </address>
         </div>
                     <div class="footer-second">
-                    <p class="footer-second__title">ПРИЄДНУЙТЕСЬ</p>
+                    <h2 class="footer-title">приєднуйтесь</h2>
                     <ul class="footer-icon">
                         <li class="footer-icon__item">
                             <a class=" footer-icon__link" href="#" target="_blank" aria-label="instagram" rel="noreferrer noopener">
@@ -507,20 +538,17 @@
                         </li>
                     </ul>
                 </div>
-                <div class="box__sending">
-                    <p class="box__sending__title">Підпишіться на розсилку</p>
-                    <form class="footer-form">
-                        <label class="footer-form__email">
-                            <input type="email" name="email" placeholder="E-mail" />
-                        </label>
-                
-                        <button class="footer-button" type="submit">
-                            Підписатися
-                            <svg class="footer-button__send" width="24px" height="24px">
+                <div class="footer__third">
+                <h2 class="footer-title">Підпишіться на розсилку</h2>
+                    <form action="#" name="form-butform" class="footer-form__butform">
+                        <input type="email" name="email-butform" id="email-butform" placeholder="E-mail" class="footer-form__email">
+                        <button type="submit" class="button footer-form__button"> Підписатися
+                            <svg class="icon icon-icon-send" width="24" height="24">
                                 <use xlink:href="./images/iconimag/sprite.svg#icon-iconplane"></use>
                             </svg>
                         </button>
                     </form>
+                
                 </div>
         </div>
     </footer>
