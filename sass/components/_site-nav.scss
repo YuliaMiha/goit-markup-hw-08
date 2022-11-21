@@ -1,8 +1,10 @@
 .info-nav {
   display: flex;
+  gap: 30px;
 
   @media screen and (max-width: 767px) {
     display: none;
+    justify-content: space-between;
   }
   @media screen and (min-width: 767px) and (max-width: 1199px) {
     flex-direction: column;
@@ -12,12 +14,12 @@
 
 .info-nav__item {
   &:not(:last-child) {
-    margin-right: 50px;
+    // margin-right: 50px;
   }
 }
 
 .info-nav__link {
-  color:  $primary-text-color;
+  color: $primary-text-color;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-decoration: none;

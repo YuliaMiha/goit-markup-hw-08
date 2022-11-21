@@ -551,10 +551,14 @@ body.modal-open {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  gap: 30px;
 }
 @media screen and (max-width: 767px) {
   .info-nav {
     display: none;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
@@ -565,10 +569,6 @@ body.modal-open {
             flex-direction: column;
     gap: 10px;
   }
-}
-
-.info-nav__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .info-nav__link {
