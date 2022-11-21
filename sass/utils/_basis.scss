@@ -32,7 +32,7 @@ a {
   text-decoration: none;
 }
 .title {
-  color: $primary-text-color;
+  color: var(--primary-text-color);
   font-weight: 700;
   font-size: 28px;
   line-height: 1.1785;
